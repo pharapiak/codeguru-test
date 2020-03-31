@@ -15,6 +15,10 @@ class MysqlCon1{
          if(con!=null) { con.close();}
          if(stmt!=null) { stmt.close();}
          if(rs!=null) { rs.close();}
+      }finally {
+         if(con!=null) { con.close();}
+         if(stmt!=null) { stmt.close();}
+         if(rs!=null) { rs.close();}
       }  
    }  
 }  
