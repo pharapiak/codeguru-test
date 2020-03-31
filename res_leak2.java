@@ -1,6 +1,6 @@
 import java.sql.*;  
-class MysqlCon{  
-   public static void main(String args[]){  
+class MysqlCon1{  
+   public static void main1(String args[]){  
       try{  
          Class.forName("com.mysql.jdbc.Driver");  
          Connection con=DriverManager.getConnection(  
