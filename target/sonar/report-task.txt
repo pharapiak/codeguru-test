@@ -1,6 +1,0 @@
-projectKey=codeguru_tests
-serverUrl=http://localhost:9000
-serverVersion=8.2.0.32929
-dashboardUrl=http://localhost:9000/dashboard?id=codeguru_tests
-ceTaskId=AXHC_FteU9nUox2Nl8ju
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXHC_FteU9nUox2Nl8ju

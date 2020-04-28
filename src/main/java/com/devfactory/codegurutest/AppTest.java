@@ -1,40 +1,36 @@
-import java.sql.*;  
-class AppTest{  
-   public int add(
-         int num1,
-         int num2,
-         int num3,
-         int num4,
-         int num5,
-         int num6,
-         int num7,
-         int num8,
-         int num9,
-         int num10,
-         int num11,
-         int num12,
-         int num13,
-         int num14,
-         int num15,
-         int num16,
-         int num17,
-         int num18,
-         int num19,
-         int num20
-         ){ 
-            return num1+num2+num3; 
-         }  
-   public static void main7(String args[]){  
-      try{  
-         Class.forName("com.mysql.jdbc.Driver");  
-         Connection con=DriverManager.getConnection(  
-               "jdbc:mysql://localhost:3306/sonoo","root","root");  
-         //here sonoo is database name, root is username and password  
-         Statement stmt=con.createStatement();  
-         ResultSet rs=stmt.executeQuery("select * from emp");  
-         while(rs.next())  
-            System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
-         //con.close();  
-      }catch(Exception e){ System.out.println(e);}  
-   }  
-}  
+import java.sql.*;
+
+class AppTest {
+   public static void main1(String args[]) {
+      Connection con = null;
+      Statement stmt = null;
+      ResultSet rs = null;
+      try {
+         Class.forName("com.mysql.jdbc.Driver");
+         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sonoo", "root", "root");
+         // here sonoo is database name, root is username and password
+         stmt = con.createStatement();
+         rs = stmt.executeQuery("select * from emp");
+         while (rs.next())
+            System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3));
+         // con.close();
+      } catch (Exception e) {
+         System.out.println(e);
+         if (con != null) {
+            con.close();
+         }
+         if (stmt != null) {
+            stmt.close();
+         }
+         // if(rs!=null) { rs.close();}
+      } finally {
+         if (con != null) {
+            con.close();
+         }
+         if (stmt != null) {
+            stmt.close();
+         }
+         // if(rs!=null) { rs.close();}
+      }
+   }
+}
