@@ -17,11 +17,11 @@ class AppTest {
       }catch (Exception ignore){
       } finally {
          try {
-            stmt.close();
+            if(stmt!=null) stmt.close();
          } catch (Exception ignore) {
          }
          try {
-            con.close();
+            if(con!=null) con.close();
          } catch (Exception ignore) {
          }
          // try {rs.close();} catch (Exception ignore){};
