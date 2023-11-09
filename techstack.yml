@@ -1,0 +1,42 @@
+repo_name: pharapiak/codeguru-test
+report_id: 5ad16ec09e6efcb51ecc7fcee77e8e16
+repo_type: Public
+timestamp: '2023-11-09T17:55:19+00:00'
+requested_by: pharapiak
+provider: github
+branch: master
+detected_tools_count: 3
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: JUnit
+  description: A programmer-oriented testing framework for Java
+  website_url: http://junit.org/
+  version: 3.8.1
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2020/874086.png
+  detection_source_url: pom.xml
+  detection_source: pom.xml
+  last_updated_by: Paul Harapiak
+  last_updated_on: 2020-04-28 21:36:05.000000000 Z
